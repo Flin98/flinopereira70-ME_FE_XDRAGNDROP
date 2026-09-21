@@ -33,7 +33,6 @@ export default function App() {
       return;
     }
 
-    // Shift item to target location instead of swapping
     const updated = [...digits];
     const [movedItem] = updated.splice(draggedIndex, 1);
     updated.splice(targetIndex, 0, movedItem);
@@ -52,7 +51,7 @@ export default function App() {
     <div className="container">
       <div className="card">
         <h1 className="title">Drag &amp; Drop Digits</h1>
-        <p className="subtitle">Drag the boxes to reorder the digits 0-9.</p>
+        <p className="subtitle">Drag the boxes to reorder the digits 0–9.</p>
 
         <div className="grid">
           {digits.map((digit, index) => {
